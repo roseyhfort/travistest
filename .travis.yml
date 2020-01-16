@@ -1,0 +1,4 @@
+services:
+  - docker
+script:
+  - docker image build -t roseyfort/travistest .
