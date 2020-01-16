@@ -17,6 +17,7 @@ r = requests.get(url)
 soup = BeautifulSoup(r.text, 'html.parser')
 
 results = [i.text for i in soup.find_all('title')][0]
+print(results)
 
 
 # build a new project dir
