@@ -3,5 +3,5 @@ services:
 script:
   - docker image build -t roseyfort/travistest .
 deploy:
-  provider:  script
-  script:  docker login -u &DOCKER_USERNAME -p &DOCKER_PASSWORD && docker push roseyfort/travistest
+  provider: script
+  script: docker login -u &DOCKER_USERNAME -p &DOCKER_PASSWORD && docker push roseyfort/travistest
